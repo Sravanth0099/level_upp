@@ -1,25 +1,69 @@
+/* Background and fonts */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f2f5;
-    text-align: center;
-    padding-top: 100px;
+    font-family: 'Orbitron', sans-serif; /* Cool futuristic font */
+    background: url('/static/images/Background.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-.login-container {
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    display: inline-block;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+/* Common container for all pages */
+.container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 40px 30px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 450px;
+    text-align: center;
+    box-shadow: 0 0 15px #dd836c, 0 0 30px #dd836c;
 }
-input {
-    padding: 10px;
-    width: 80%;
+
+/* Heading with glow */
+.container h1, .container h2 {
+    font-size: 32px;
+    color: #00f0ff;
+    text-shadow: 0 0 10px #dd836c, 0 0 20px #dd836c;
 }
-button {
-    padding: 10px 20px;
-    background-color: #4CAF50;
+
+/* Input Fields */
+.container input {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
     border: none;
+    border-radius: 8px;
+    background: #2c5364;
     color: white;
-    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Buttons */
+.container button {
+    width: 95%;
+    padding: 12px;
+    margin-top: 15px;
+    background-color: #dd836c;
+    border: none;
+    border-radius: 8px;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 5px #dd836c, 0 0 10px #dd836c;
+}
+
+.container button:hover {
+    background-color: #dd836c;
+    box-shadow: 0 0 20px #0ff, 0 0 30px #0ff;
+}
+
+/* Links */
+.container a {
+    color: #dd836c;
+    text-decoration: none;
+    font-weight: bold;
 }
